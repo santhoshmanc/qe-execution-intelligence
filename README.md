@@ -165,6 +165,18 @@ defect-impact analytics
 CI/CD execution
 automated validation tests
 interactive HTML reporting
+## Quick Start
+
+### Prerequisites
+
+- Git
+- PowerShell 7+
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/santhoshmanc/qe-execution-intelligence.git
+cd qe-execution-intelligence
 Author
 Santhosh
 Senior Quality Automation Engineer focused on enterprise test automation, ETL and data testing, API validation, CI/CD, test analytics, and modern Quality Engineering practices.
