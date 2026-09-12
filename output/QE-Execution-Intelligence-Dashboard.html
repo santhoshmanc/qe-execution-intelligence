@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QE Execution Intelligence</title>
+
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 28px 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 8px 0 0 0;
+    color: #d1d5db;
+}
+
+.container {
+    padding: 30px 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.card .label {
+    font-size: 13px;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.card .value {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card.info {
+    border-top: 4px solid #2563eb;
+}
+
+.card.pass {
+    border-top: 4px solid #16a34a;
+}
+
+.card.fail {
+    border-top: 4px solid #dc2626;
+}
+
+.card.blocked {
+    border-top: 4px solid #d97706;
+}
+
+.card.pending {
+    border-top: 4px solid #6b7280;
+}
+
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #f3f4f6;
+    text-align: left;
+    padding: 11px;
+    font-size: 13px;
+}
+
+td {
+    padding: 11px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.insights li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 12px;
+    padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>QE Execution Intelligence</h1>
+    <p>Automated Test Execution & Quality Analytics Dashboard</p>
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card info">
+    <div class="label">Planned</div>
+    <div class="value">25</div>
+</div>
+
+<div class="card info">
+    <div class="label">Executed</div>
+    <div class="value">19</div>
+</div>
+
+<div class="card pass">
+    <div class="label">Passed</div>
+    <div class="value">15</div>
+</div>
+
+<div class="card fail">
+    <div class="label">Failed</div>
+    <div class="value">4</div>
+</div>
+
+<div class="card blocked">
+    <div class="label">Blocked</div>
+    <div class="value">4</div>
+</div>
+
+<div class="card pending">
+    <div class="label">Not Executed</div>
+    <div class="value">2</div>
+</div>
+
+<div class="card info">
+    <div class="label">Completion</div>
+    <div class="value">76%</div>
+</div>
+
+<div class="card pass">
+    <div class="label">Pass Rate</div>
+    <div class="value">78.9%</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Executive Insights</h2>
+
+<ul class="insights">
+<li>Execution completion is <strong>76%</strong> with 19 of 25 planned tests executed.</li><li>Current pass rate is <strong>78.9%</strong> based on executed tests.</li><li><strong>2</strong> executions occurred after their planned execution dates.</li><li><strong>1</strong> newly observed execution appeared between the previous and current snapshots.</li><li><strong>1</strong> already-executed test changed status without increasing the executed count.</li><li><strong>4</strong> tests remain blocked and may affect release readiness.</li><li><strong>2</strong> planned tests are still not executed.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Planned vs Actual Execution</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Date</th>
+<th>Planned</th>
+<th>Executed</th>
+<th>Variance</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>2026-09-01</td>
+    <td>5</td>
+    <td>3</td>
+    <td>-2</td>
+</tr><tr>
+    <td>2026-09-02</td>
+    <td>5</td>
+    <td>4</td>
+    <td>-1</td>
+</tr><tr>
+    <td>2026-09-03</td>
+    <td>5</td>
+    <td>3</td>
+    <td>-2</td>
+</tr><tr>
+    <td>2026-09-04</td>
+    <td>5</td>
+    <td>4</td>
+    <td>-1</td>
+</tr><tr>
+    <td>2026-09-05</td>
+    <td>5</td>
+    <td>4</td>
+    <td>-1</td>
+</tr><tr>
+    <td>2026-09-06</td>
+    <td>0</td>
+    <td>1</td>
+    <td>+1</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Snapshot Change Intelligence</h2>
+
+<p>
+Compares the previous execution snapshot with the latest execution snapshot.
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Test Run</th>
+<th>Previous</th>
+<th>Current</th>
+<th>Insight</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>TR-1003</td>
+    <td>Failed | 2026-09-01</td>
+    <td>Passed | 2026-09-01</td>
+    <td>Status changed: Failed → Passed</td>
+</tr><tr>
+    <td>TR-1004</td>
+    <td>Blocked</td>
+    <td>Passed | 2026-09-06</td>
+    <td>Newly observed execution; Status changed: Blocked → Passed</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="footer">
+Synthetic portfolio data only • Generated 2026-09-12 17:34:21
+</div>
+
+</body>
+</html>
