@@ -8,6 +8,10 @@ A lightweight Quality Engineering portfolio project that transforms synthetic te
 
 QE Execution Intelligence demonstrates how raw test execution data can be transformed into simple, stakeholder-friendly quality insights.
 
+## Dashboard Preview
+
+![QE Execution Intelligence Dashboard](docs/screenshots/qe-execution-intelligence-dashboard.png)
+
 The dashboard answers practical QA reporting questions such as:
 
 - How many tests were planned and executed?
